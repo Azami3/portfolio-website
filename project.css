@@ -1,0 +1,65 @@
+.project_bg {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+.heading_project {
+    color: #ff6600; /* Updated heading color */
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 30px; /* Added spacing below the heading */
+}
+
+.project_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project_card {
+    width: 200px; /* Adjusted width for better visual balance */
+    background-color: #1e1e1e; /* Slightly lighter and more neutral background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project_card h2 {
+    color: #ffffff;
+    font-size: 18px; /* Adjusted font size for better readability */
+    margin: 10px 0;
+}
+
+.project_card:hover {
+    transform: translateY(-5px);
+    background-color: #292929; /* Slightly lighter hover effect */
+}
+
+.project_image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.project_info {
+    padding: 15px; /* Added padding for better spacing */
+}
+
+.project_info p {
+    color: #cccccc; /* Lighter text color for better readability */
+    font-size: 14px;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.project_link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project_link:hover {
+    color: #ffffff;
+}

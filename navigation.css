@@ -1,0 +1,100 @@
+.navbar {
+    background-color: #888888;
+    padding-right: 50px;
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.logo {
+    height: 80px; 
+    width: 80px; 
+    margin-right: 20px; 
+}
+
+* {
+    text-decoration: none;
+    font-size: 20px; /* Decrease font size for smaller screens */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+a {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.nav_color.active {
+    color: #FFD700;
+}
+
+.nav_color:hover {
+    color: #FFD700;
+    font-size: 35px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .navdiv {
+        margin-right: 0; /* Reset margin for smaller screens */
+    }
+
+    .logo {
+        height: 50px; /* Adjust logo size for tablets */
+        width: 50px; /* Adjust logo size for tablets */
+        margin-right: 5px; /* Adjust margin for tablets */
+    }
+
+    a {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+    .nav_color:hover {
+        color: #FFD700;
+        font-size: 25px;
+
+}
+}
+
+@media screen and (max-width: 480px) {
+    .navdiv {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .logo {
+        height: 40px; /* Adjust logo size for mobile */
+        width: 40px; /* Adjust logo size for mobile */
+        margin-bottom: 10px; /* Add space below logo for mobile */
+    }
+
+    a {
+        font-size: 12px; /* Decrease font size for mobile */
+    }
+
+    ul {
+        gap: 15px; /* Decrease gap between items for mobile */
+    }
+    .nav_color:hover {
+        color: #FFD700;
+        font-size: 16px;
+    
+    }
+}
+

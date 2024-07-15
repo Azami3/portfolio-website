@@ -1,0 +1,123 @@
+.heading_about {
+    font-family: 'Titillium Web';
+    font-size: 40px;
+    position: relative;
+    left: 820px;
+    top: 100px;
+}
+
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: blink-caret .75s step-end infinite;
+}
+
+.intro {
+    font-family: 'Titillium Web';
+    font-size: 25px;
+    position: relative;
+    left: 700px;
+    top: 110.7px;
+}
+
+.name {
+    font-family: 'Titillium Web';
+    font-size: 40px;
+    position: relative;
+    left: 820px;
+    top: 20px;
+    color: #013362;
+    font-weight: 700;
+    height: 45px; 
+}
+
+.visit_cv {
+    box-sizing: border-box;
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: calc(200% - 90px); /* Center horizontally */
+    bottom: 30px; /* Adjust vertical position as needed */
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    color: #fffdfd;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.visit_cv:hover {
+    background: #FF6600; /* Change background color on hover */
+    color: white;
+}
+
+/* Optional: If you want to remove the default link underline */
+.visit_cv:focus, .visit_cv:hover, .visit_cv:active {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.about_bg p {
+    position: relative;
+    left: 670px;
+    top: 10px;
+    width: 550px;
+    font-family: 'Titillium Web';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pic_bg {
+    position: relative;
+    background: #011222;
+    border-radius: 46px;
+    width: 400px;
+    height: 450px;
+    left: 120px;
+    bottom: 370px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.picture {
+    position: relative;
+    width: 370px;
+    height: 420px;
+    left: 1px;
+    top: 30px;
+    border-radius: 46px;
+    background: no-repeat;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
